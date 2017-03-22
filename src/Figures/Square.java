@@ -22,10 +22,12 @@ public class Square extends Quadrangle implements Cloneable {
     @Override
     protected boolean valid() {
 
-        if (a > 0 || b > 0 || c > 0 || d > 0)
+        if (a <= 0 || b <= 0 || c <= 0 || d <= 0)
             return false;
 
-        if (a != b || a != c || a != d)
+        if ( Double.compare(a, b) != 0
+                || Double.compare(b, c) != 0
+                || Double.compare(c, d) != 0)
             return false;
 
         return true;
