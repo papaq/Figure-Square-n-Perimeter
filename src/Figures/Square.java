@@ -16,7 +16,7 @@ public class Square extends Quadrangle implements Cloneable {
     @Override
     protected double square() {
 
-        return a*b*c*d;
+        return a*a;
     }
 
     @Override
